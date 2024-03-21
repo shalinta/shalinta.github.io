@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/75a75ad027.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="about_header1">
+        <div class="container">
+            <nav>
+                <img class="logo" src="Logo.png" >
+                <ul id="sidemenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="about_header1">
+                <img src="Untitled design (3).png" class="center" >
+                <div id="demoFont">ABOUT</div>
+            </div>
+        </div>
+    </div>
+    <div id="about_para">
+       <div class="container">
+         <p>Hey, I'm Shalinta.A computer Science Student. I have a wide array of interests that speak volumes about my passion for exploring and understanding the world around me. In particular, I am passionate about software development, which involves designing, creating, and maintaining computer programs that solve specific problems. I am fascinated by the idea that machines can perform complex tasks and calculations that would be impossible for humans to do manually. I am always on the lookout for new and innovative technologies and tools in this field, and I am constantly exploring new and exciting projects to work on. My interest in software development is complemented by my fascination with space and astrophysics. As a curious learner, I find myself drawn to the mysteries of the universe and the science that helps us to understand it. I am particularly interested in black holes, which are incredibly dense regions in space that exert a powerful gravitational force on their surroundings. I am fascinated by the research being done in this field, and I am always eager to learn more about the physical properties and behavior of celestial objects. In addition to my interest in software development and space, I am also deeply intrigued by quantum computing. This is a rapidly developing field that explores the properties of quantum mechanics to perform calculations that would be impossible on classical computers. I am fascinated by the potential applications of this technology, which range from cryptography to drug discovery. I am always on the lookout for new and interesting developments in this field, and I am eager to learn more about the ways in which quantum computing can revolutionize the world of computing. Another area of computing that interests me is blockchain technology. I believe that blockchain has the potential to revolutionize many industries, from finance to healthcare. I am fascinated by the way this technology can be used to create secure, decentralized systems that are resistant to fraud and manipulation. I am always on the lookout for new and innovative use cases for blockchain, and I am eager to learn more about the ways in which this technology can transform the world around us. Finally, music is also an interest of mine. I enjoy listening to a wide variety of genres, and I appreciate the creativity and talent that goes into creating music. I believe that music is a powerful way to express emotions and ideas, and I enjoy exploring the different ways that music can be used to connect people and convey messages. Whether it is through listening to music, attending concerts, or playing an instrument, music is an integral part of my life.</p>
+ 
+       </div> 
+    </div>
+
+
+    <div id="about_section1">
+        <div class="container">
+            <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experince')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+                    <ul><li><span>Machine Learning<br><font color="white"> Building Machine Learning Model</font></span></li></ul>
+                    <ul><li><span>Blockchain<br><font color="white"> Building Machine Learning Model</font></span></li></ul>
+                    <ul><li><span>Web Development<br><font color="white"> Building Machine Learning Model</font></span></li></ul>
+            </div>
+            <div class="tab-contents" id="experince">
+                    <ul><li><span>Reasearch Intern at La Trobe Univeristy</span></li></ul>
+                    <ul><li><span>AI-ML Virtual Internship</span></li></ul>
+                    
+            </div>
+            <div class="tab-contents" id ="education">
+                    <ul><li><span>2019-2023</span><br>B.Tech in Computer Science and Engineering<br>
+                    Veltech Univeristy(Chennai)</li></ul>
+                    <ul><li><span>2017-2019</span><br>Secondary School from Sri Chaitanya Techno School(Visakhapatnam)</li></ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact1">
+    <div class="conatiner">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">CONTACT INFORMATION</h1>
+                <p><i class="fa-solid fa-envelope"></i>shalintagiri34@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                <div class="social-icon">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+              <a href="Resume-Shalinta-Giri (13).pdf" download class="btn btn2">DOWNLOAD RESUME</a>
+
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required> 
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    
+                    <button type="Submit" class="btn btn2">SUBMIT</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Shalinta.Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+
+</div>
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links")
+        var tabcontents=document.getElementsByClassName("tab-contents")
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    
+    
+    </script>
+    
+</body>
+</html>

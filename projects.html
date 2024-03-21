@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/75a75ad027.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="about_header1">
+        <div class="container">
+            <nav>
+                <img class="logo" src="Logo.png" >
+                <ul id="sidemenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="about_header1">
+                <div id="demoFont">PROJECTS</div>
+            </div>
+        </div>
+    </div>
+    <div id="about_para">
+       <div class="container">
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('Blockchain')">Blockchain</p>
+            <p class="tab-links" onclick="opentab('Machine Learning')">Machine Learning</p>
+            <p class="tab-links" onclick="opentab('Web development')">Web Development</p>
+    </div>
+    <div class="tab-contents active-tab" id="Blockchain">
+        <img src="vote.png" class="center">
+        <ul><li><span>1. e-voting dApp<br><font color="white"> One of my notable projects showcased here is an e-voting decentralized application developed using Solidity, a language for writing smart contracts on the Ethereum blockchain. Leveraging the Truffle framework and Ganache for local blockchain development, I engineered a secure and transparent voting platform. By storing votes directly on the blockchain, this solution ensures the integrity of the electoral process, guaranteeing that votes remain tamper-proof and immutable. Through this project, I demonstrated my proficiency in blockchain technology and my commitment to developing innovative solutions for real-world challenges.</font></span></li></ul>
+        
+        <button onclick="document.location='https://github.com/'" class="btn btn2">Github</button>
+</div>
+<div class="tab-contents" id="Machine Learning">
+        <ul><li><span>1. Skincare Recommendation System<br><font color="white">I'm excited to share my project on a skincare recommendation system, which utilizes collaborative filtering techniques to offer personalized skincare suggestions. By analyzing user preferences and behaviors, this system generates tailored recommendations, ensuring users receive skincare products that best suit their individual needs. I implemented the recommendation engine using collaborative filtering algorithms, harnessing the power of data to deliver accurate and effective suggestions. To enhance user interaction and accessibility, I developed the frontend using Streamlit, a user-friendly framework for building interactive web applications with Python. Through this project, I aimed to simplify the skincare selection process and empower users to make informed decisions about their skincare routine.
+
+        </font></span></li></ul>
+        <button onclick="document.location='https://github.com/'" class="btn btn2">Github</button>
+        
+</div>
+<div class="tab-contents" id ="Web development">
+        <ul><li><span>1. Portfolio Website<br><font color="white">One of my standout projects is the creation of my own portfolio website using HTML, CSS, and JavaScript. With a keen eye for design and a passion for coding, I crafted a visually appealing and user-friendly interface that showcases my skills and experiences. Leveraging HTML for structure, CSS for styling, and JavaScript for interactivity, I ensured a seamless browsing experience for visitors. From the sleek layout to the smooth animations, every aspect of this project reflects my dedication to creating polished and professional web applications. Through this endeavor, I not only demonstrated my proficiency in front-end development but also established a platform to showcase my work and connect with potential collaborators and clients.
+
+        </font></span></li></ul>
+        <button onclick="document.location='https://github.com/'" class="btn btn2">Github</button>
+</div>
+</div>
+       </div> 
+    </div>
+
+
+    <div class="copyright">
+        <p>Copyright © Shalinta.Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+
+</div>
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links")
+        var tabcontents=document.getElementsByClassName("tab-contents")
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    
+    
+    </script>
+    
+</body>
+</html>
